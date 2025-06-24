@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+    <title>Big10 Volleyball - Correlation Matrix</title>
+</head>
+<body>
+  <h1 style="font-family: 'Bungee', sans-serif;">Correlation Matrix!</h1>
+  <p class="text-muted">The correlation matrix displays the correlation between all team statistics.</p>
+  
+   <style>
+    .viz-wrapper {
+      overflow-x: auto; /* Enables horizontal scrolling if needed */
+      width: 100%;
+    }
+
+    .viz-container {
+      min-width: 850px; /* or whatever width your Tableau viz needs */
+      display: flex;
+      justify-content: center;
+    }
+
+    tableau-viz {
+      width: 950px;
+      height: 600px;
+    }
+  </style>
+  
+  <div class="viz-container">
+        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+          <tableau-viz id="tableauViz"  class="correlation"     
+            src='https://public.tableau.com/views/VolleyballRound2/Dashboard4?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link'
+            device="default"
+            toolbar="bottom" hide-tabs>
+          </tableau-viz> 
+      </div>
+    <a href="/">Back to Home Page</a>
+</body>
+</html>
+
